@@ -8,6 +8,34 @@ public class Comment {
     private Date timestamp;
     private String event;
 
+    void setText(){
+
+    }
+    String getText(){
+
+        return text;
+    }
+    void setUser(){
+
+    }
+    String getUser(){
+
+        return user;
+    }
+    Date getTimestamp(){
+
+        return timestamp;
+    }
+    void setTimestamp(){
+
+    }
+    String getEvent(){
+
+        return event;
+    }
+    void setEvent(){
+
+    }
 
 
 

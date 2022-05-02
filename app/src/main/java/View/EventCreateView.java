@@ -1,5 +1,13 @@
 package View;
 
 public class EventCreateView {
-    //TODO
+
+    Boolean createEvent(){
+
+        return true;
+    }
+    Boolean cancelEvent(){
+
+        return false;
+    }
 }

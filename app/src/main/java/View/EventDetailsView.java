@@ -1,7 +1,16 @@
 package View;
 
+import Controller.Comment;
+
 public class EventDetailsView {
-    //TODO
+    Comment[] comments;
 
+    Boolean send(){
 
+        return true;
+    }
+
+    void saveComment(){
+
+    }
 }
