@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="412dp"
-        android:layout_height="733dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -12,10 +12,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/eventNameTextField"
@@ -25,6 +25,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
             android:hint="Event Name"
+            android:textColorHint="#757575"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,13 +53,14 @@
             android:gravity="start|top"
             android:hint="Beschreibung"
             android:inputType="textMultiLine"
+            android:textColorHint="#757575"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/adressTextField" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
-            android:layout_width="199dp"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="17dp"
@@ -66,17 +68,61 @@
             android:hint="Anzahl Personen"
             android:inputType="numberDecimal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionTextField" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextField"
+            android:autofillHints="" />
 
         <CalendarView
             android:id="@+id/calendarView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="353dp"
+            android:layout_height="297dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="17dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextTime2"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="17dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Uhrzeit"
+            android:inputType="time"
+            android:textColorHint="#757575"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FF4848"
+            android:text="Abbrechen"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTime2" />
+
+        <Button
+            android:id="@+id/creatButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#BC78FF"
+            android:text="Erstellen"
+            android:textColor="#263238"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTime2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
