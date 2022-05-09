@@ -10,6 +10,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //this is test for Gautam
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.);
+        setContentView(R.layout.activity_main);
     }
 }
