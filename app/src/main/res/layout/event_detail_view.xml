@@ -61,10 +61,4 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollViewDetail"
         app:srcCompat="@drawable/send" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="88dp"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
