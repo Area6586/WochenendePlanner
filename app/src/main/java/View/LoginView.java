@@ -1,14 +1,16 @@
 package View;
 
 public class LoginView {
-    private String benutzerName;
-    private String passwort;
+    private String userName;
+    private String password;
 
 
-    void getBenutzerName(){
+    void getuserName(){
+
+
     }
 
-    void getPasswort(){
+    void getpassword(){
 
     }
 }

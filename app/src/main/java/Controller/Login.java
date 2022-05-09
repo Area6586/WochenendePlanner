@@ -1,21 +1,21 @@
 package Controller;
 
 public class Login {
-    private String benutzername;
-    private String passwort;
+    private String userName;
+    private String password;
 
-    String getBenutzername(){
+    String getUserName(){
 
-        return benutzername;
+        return userName;
     }
-    void setBenutzername(){
+    void setUserName(){
 
     }
-    String getPasswort(){
+    String getPassword(){
 
-        return passwort;
+        return password;
     }
-    void setPasswort(){
+    void setPassword(){
 
     }
 }

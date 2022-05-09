@@ -3,34 +3,34 @@ package Controller;
 import java.util.Date;
 
 public class Event {
-    private int teilnehmer;
-    private String kurzBeschreibung;
-    private Date datum;
+    private int attendees;
+    private String shortInroduction;
+    private Date date;
     private String eventName;
-    private String adresse;
+    private String address;
 
-    int getTeilnehmer(){
+    int getAttendees(){
 
-        return teilnehmer;
+        return attendees;
     }
-    void setTeilnehmer(){
-
-    }
-    String getKurzBeschreibung(){
-
-        return kurzBeschreibung;
-    }
-
-    void setKurzBeschreibung(){
+    void setAttendees(){
 
     }
+    String getShortInroduction(){
 
-    Date getDatum(){
-
-        return datum;
+        return shortInroduction;
     }
 
-    void setDatum(){
+    void setShortInroduction(){
+
+    }
+
+    Date getDate(){
+
+        return date;
+    }
+
+    void setDate(){
 
     }
 
@@ -43,12 +43,12 @@ public class Event {
 
     }
 
-    String getAdresse(){
+    String getAddress(){
 
-        return adresse;
+        return address;
     }
 
-    void setAdresse(){
+    void setAddress(){
 
     }
 
