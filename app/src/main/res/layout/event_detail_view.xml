@@ -9,11 +9,13 @@
         android:id="@+id/scrollViewDetail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/appbar_scrolling_view_behavior"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="60dp"
-        tools:layout_editor_absoluteX="-189dp"
-        tools:layout_editor_absoluteY="-292dp">
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="65dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-189dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,15 +39,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollViewDetail" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/emojiButton"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
         android:layout_marginStart="7dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textInputEditText"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="10dp"
+        android:background="trans"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewDetail"
+        app:srcCompat="@drawable/smiley" />
+
+    <ImageButton
+        android:id="@+id/sendButton"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="trans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewDetail"
+        app:srcCompat="@drawable/send" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="88dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
