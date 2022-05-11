@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824855171220",
+    "project_id": "wochenende-planner",
+    "storage_bucket": "wochenende-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824855171220:android:7a85ed2764e1477406a481",
+        "android_client_info": {
+          "package_name": "com.example.wochenendeplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824855171220-qtlr5pf5n6g6vver4nsklicnln2s0p0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4TA9QKkAj7yJxdXXJTz1wW0cRdYxg16c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824855171220-qtlr5pf5n6g6vver4nsklicnln2s0p0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
