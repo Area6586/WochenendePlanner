@@ -5,12 +5,16 @@ import Controller.Comment;
 public class EventDetailsView {
     Comment[] comments;
 
-    Boolean send(){
+    public Boolean send(){
 
         return true;
     }
 
-    void saveComment(){
+    public Comment[] getComments() {
+        return comments;
+    }
 
+    public void setComments(Comment[] comments) {
+        this.comments = comments;
     }
 }

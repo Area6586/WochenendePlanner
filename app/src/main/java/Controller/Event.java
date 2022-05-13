@@ -9,51 +9,52 @@ public class Event {
     private String eventName;
     private String address;
 
-    int getAttendees(){
+    public Event(int attendees, String shortInroduction, Date date, String eventName, String address) {
+        this.attendees = attendees;
+        this.shortInroduction = shortInroduction;
+        this.date = date;
+        this.eventName = eventName;
+        this.address = address;
+    }
 
+    public int getAttendees() {
         return attendees;
     }
-    void setAttendees(){
 
+    public void setAttendees(int attendees) {
+        this.attendees = attendees;
     }
-    String getShortInroduction(){
 
+    public String getShortInroduction() {
         return shortInroduction;
     }
 
-    void setShortInroduction(){
-
+    public void setShortInroduction(String shortInroduction) {
+        this.shortInroduction = shortInroduction;
     }
 
-    Date getDate(){
-
+    public Date getDate() {
         return date;
     }
 
-    void setDate(){
-
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    String getEventName(){
-
-        return  eventName;
+    public String getEventName() {
+        return eventName;
     }
 
-    void setEventName(){
-
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
-    String getAddress(){
-
+    public String getAddress() {
         return address;
     }
 
-    void setAddress(){
-
-    }
-
-    void saveData(){
-
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
 

@@ -4,18 +4,24 @@ public class Login {
     private String userName;
     private String password;
 
-    String getUserName(){
+    public Login(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
+    }
 
+    public String getUserName() {
         return userName;
     }
-    void setUserName(){
 
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
-    String getPassword(){
 
+    public String getPassword() {
         return password;
     }
-    void setPassword(){
 
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

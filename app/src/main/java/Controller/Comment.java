@@ -8,36 +8,43 @@ public class Comment {
     private Date timestamp;
     private String event;
 
-    void setText(){
-
+    public Comment(String text, String user, Date timestamp, String event) {
+        this.text = text;
+        this.user = user;
+        this.timestamp = timestamp;
+        this.event = event;
     }
-    String getText(){
 
+    public String getText() {
         return text;
     }
-    void setUser(){
 
+    public void setText(String text) {
+        this.text = text;
     }
-    String getUser(){
 
+    public String getUser() {
         return user;
     }
-    Date getTimestamp(){
 
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public Date getTimestamp() {
         return timestamp;
     }
-    void setTimestamp(){
 
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
-    String getEvent(){
 
+    public String getEvent() {
         return event;
     }
-    void setEvent(){
 
+    public void setEvent(String event) {
+        this.event = event;
     }
-
-
-
-
 }
+
