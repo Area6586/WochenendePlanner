@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Wochenende Planner</string>
-    <string name="default_web_client_id">id</string>
+    <string name="google_sign_up">google_sign_up</string>
 </resources>
