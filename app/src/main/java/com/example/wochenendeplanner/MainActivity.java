@@ -15,6 +15,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -28,7 +29,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class MainActivity extends AppCompatActivity {
         private GoogleSignInClient mGoogleSignInClient;
         private FirebaseAuth firebaseAuth;
-        private Button googleSignIn;
+        private SignInButton googleSignIn;
         private static final String TAG = "GoogleActivity";
         private int RC_SIGN_UP = 1;
 
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firebaseAuth = FirebaseAuth.getInstance();
         // [START config_signin]
         // Configure Google Sign In
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -45,14 +48,17 @@ public class MainActivity extends AppCompatActivity {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
 
-        googleSignIn = (Button) findViewById(R.id.sign_in_button);
+        googleSignIn = findViewById(R.id.sign_in_button);
         googleSignIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 signUp();
             }
             private void signUp() {
+
+                Log.i(TAG, "signUp__: ");
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-                }
+                startActivityForResult(signInIntent,RC_SIGN_UP);
+            }
         });
         }
     @Override
