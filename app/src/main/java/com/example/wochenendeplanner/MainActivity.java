@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.i(TAG, "signUp__: ");
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+                //TODO
                 startActivityForResult(signInIntent,RC_SIGN_UP);
             }
         });
