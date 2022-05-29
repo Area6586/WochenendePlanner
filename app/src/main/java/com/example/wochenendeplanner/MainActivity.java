@@ -25,6 +25,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+import Model.SaveInDb;
+
 
 public class MainActivity extends AppCompatActivity {
         private GoogleSignInClient mGoogleSignInClient;
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(signInIntent,RC_SIGN_UP);
             }
         });
+        Log.d("Database","I'm here!");
+        SaveInDb save = new SaveInDb();
+        save.saveData();
+        Log.d("Database","Congratulation! You write in the DB, maybe");
         }
     @Override
     public void onActivityResult(int getCode, int endCode, @Nullable Intent data){
