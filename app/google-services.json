@@ -1,20 +1,21 @@
 {
   "project_info": {
-    "project_number": "824855171220",
-    "project_id": "wochenende-planner",
-    "storage_bucket": "wochenende-planner.appspot.com"
+    "project_number": "399233612081",
+    "firebase_url": "https://wochenenddb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wochenenddb",
+    "storage_bucket": "wochenenddb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:824855171220:android:7a85ed2764e1477406a481",
+        "mobilesdk_app_id": "1:399233612081:android:e7c65be898cffac01a1810",
         "android_client_info": {
           "package_name": "com.example.wochenendeplanner"
         }
       },
       "oauth_client": [
         {
-          "client_id": "824855171220-ohkad15pp3r36c8e7tbdq9bbthma7a6u.apps.googleusercontent.com",
+          "client_id": "399233612081-5vnq0qttocqepcp9hj2bbl2mqtrdbip8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.wochenendeplanner",
@@ -22,20 +23,20 @@
           }
         },
         {
-          "client_id": "824855171220-qtlr5pf5n6g6vver4nsklicnln2s0p0p.apps.googleusercontent.com",
+          "client_id": "399233612081-41rcqeih66q4pst00jpmjvg421kfm61m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD4TA9QKkAj7yJxdXXJTz1wW0cRdYxg16c"
+          "current_key": "AIzaSyAmEzPFq6_dtkBq0PFZGLL3UHsxfEgjK54"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "824855171220-qtlr5pf5n6g6vver4nsklicnln2s0p0p.apps.googleusercontent.com",
+              "client_id": "399233612081-41rcqeih66q4pst00jpmjvg421kfm61m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
