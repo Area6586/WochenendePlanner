@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "399233612081",
+    "firebase_url": "https://wochenenddb-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "wochenenddb",
     "storage_bucket": "wochenenddb.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "399233612081-5vnq0qttocqepcp9hj2bbl2mqtrdbip8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wochenendeplanner",
+            "certificate_hash": "e6ec444e4f5c7407c933305f0a79b4aaa780afdb"
+          }
+        },
         {
           "client_id": "399233612081-41rcqeih66q4pst00jpmjvg421kfm61m.apps.googleusercontent.com",
           "client_type": 3
