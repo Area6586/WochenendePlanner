@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.11574074074074074" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/event_create.xml" value="0.45" />
         <entry key="app/src/main/res/layout/event_create_view.xml" value="0.125" />
         <entry key="app/src/main/res/layout/event_detail_view.xml" value="0.125" />
         <entry key="app/src/main/res/layout/home_view.xml" value="0.125" />
