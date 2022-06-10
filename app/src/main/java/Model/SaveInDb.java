@@ -13,6 +13,7 @@ public class SaveInDb {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
         Log.d("Database","I'm from SaveInDb!");
-        myRef.setValue("Hello, World1111");
+        myRef.setValue("Hello, World Android");
+
     }
 }

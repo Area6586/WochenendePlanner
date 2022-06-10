@@ -63,10 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(signInIntent,RC_SIGN_UP);
             }
         });
-        Log.d("Database","I'm here!");
-        SaveInDb save = new SaveInDb();
-        save.saveData();
-        Log.d("Database","Congratulation! You write in the DB, maybe");
+
         }
     @Override
     public void onActivityResult(int getCode, int endCode, @Nullable Intent data){
@@ -109,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Authentication Succesful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this, Home.class));
                             finish();
+                            Log.d("Database","I'm here!");
+                            SaveInDb save = new SaveInDb();
+                            save.saveData();
+                            Log.d("Database","Congratulation! You write in the DB, maybe");
                         } else {
                             Toast.makeText(MainActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                             FirebaseUser mUser = firebaseAuth.getCurrentUser();
