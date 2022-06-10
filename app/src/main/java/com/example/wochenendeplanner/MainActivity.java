@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         //Google Sign Up
         if(getCode == RC_SIGN_IN)
         {
+            //Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignUpResult(task);
         }
