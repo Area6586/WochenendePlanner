@@ -53,21 +53,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 signUp();
             }
+
             private void signUp() {
 
                 Log.i(TAG, "signUp__: ");
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 //TODO
-                startActivityForResult(signInIntent,RC_SIGN_IN);
+                startActivityForResult(signInIntent, RC_SIGN_IN);
             }
         });
     }
+
     @Override
-    public void onActivityResult(int getCode, int endCode, @Nullable Intent data){
+    public void onActivityResult(int getCode, int endCode, @Nullable Intent data) {
         super.onActivityResult(getCode, endCode, data);
         //Google Sign Up
-        if(getCode == RC_SIGN_IN)
-        {
+        if (getCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignUpResult(task);
         }
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
             FirebaseGoogleAuth(account);
         } catch (ApiException e) {
-            Toast.makeText(MainActivity.this,"Sign In Failed",Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Sign In Failed", Toast.LENGTH_SHORT).show();
             FirebaseGoogleAuth(null);
             Log.w(TAG, "Google sign in failed", e);
         }
@@ -88,17 +89,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void FirebaseGoogleAuth(GoogleSignInAccount myAccount) {
         //check if account is null
-        if (myAccount != null)
-        {
+        if (myAccount != null) {
             AuthCredential myAuthCredential = GoogleAuthProvider.getCredential(myAccount.getIdToken(), null);
             firebaseAuth.signInWithCredential(myAuthCredential)
-                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
-                            {
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                                 @Override
-                                public void onComplete(@NonNull Task<AuthResult> task)
-                                {
-                                    if (task.isSuccessful())
-                                    {
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
                                         Log.d(TAG, "signInWithCredential:success");
                                         Toast.makeText(MainActivity.this, "Authentication Succesful", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(MainActivity.this, Home.class));
@@ -111,8 +108,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                     );
-        }
-        else{
+        } else {
             Toast.makeText(MainActivity.this, "acc failed", Toast.LENGTH_SHORT).show();
         }
     }
